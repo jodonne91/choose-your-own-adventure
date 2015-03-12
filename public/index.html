@@ -10,5 +10,32 @@
   </head>
   <body>
     <script src="index.js"></script>
+
+      <div class = "main">
+
+
+
+      </div>
+
+    <script type="x-handlebars-template" id = "page-content-template">
+      <section class = 'paragraphs'><p>{{text1}}</p><p>{{text2}}</p><p>{{text3}}</p><p>{{text4}}</p></section>
+      <section class = 'options'>
+        <a href = '#page/{{option1_link}}'><h4>{{option1}}</h4></a>
+        <a href = '#page/{{option2_link}}'><h4>{{option2}}</h4></a>
+      </section>
+      <a href = ""><h4>Back to Table of Contents</h4></a>
+    </script>
+
+    <script type="x-handlebars-template" id = "toc-template">
+      <section class = "toc">
+        <ul class = "toc-list">
+        </ul>
+      </section>
+    </script>
+  
+    <script type="x-handlebars-template" id = "toc-item-template">
+      <li class = "toc-item"><a href = "#page/{{page}}"><span>{{title}}</span></a><span>{{page}}<span></li>
+    </script>
+
   </body>
 </html>
